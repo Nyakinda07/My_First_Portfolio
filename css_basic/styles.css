@@ -1,0 +1,47 @@
+/* Set up the body as a flex container with a column layout */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+}
+
+/* Set up the main container as a flex container with a row layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Allow main to grow and shrink as needed */
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the article to take 2/3 of the width */
+article {
+    flex: 2;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Style the aside to take 1/3 of the width */
+aside {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
